@@ -14,6 +14,8 @@ finish-args:
   - --allow=bluetooth
   - --system-talk-name=org.bluez
 
+  - --talk-name=org.cobble.Daemon
+
 cleanup:
   - /include
   - /lib/pkgconfig
@@ -45,7 +47,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/bleaksport
-        commit: 7d0aedacb8f116e96ba1748b8afa9f9dc4d5ee5f
+        commit: 4fb34ff69dbab6ec160a130a476fd95b2f682d1e
 
   - name: python3-libpebble2
     buildsystem: simple
@@ -57,6 +59,16 @@ modules:
         url: https://github.com/luigi311/libpebble2
         commit: be74eea06da089b79cd59ceb1ffeb62dbe515de6
 
+  - name: python3-cobble-client
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --no-index --no-deps --no-build-isolation
+        --prefix=${FLATPAK_DEST} packages/cobble-client
+    sources:
+      - type: git
+        url: https://github.com/luigi311/cobble
+        commit: 182e1d09ac445a8d493faa32c51c7461e68aac4b
+
   - name: python3-workout-parser
     buildsystem: simple
     build-commands:
@@ -65,7 +77,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/workout_parser
-        commit: 631d57b79e34633d71e2cbfb3b07337a77fa90a8
+        commit: 417be9cdfe0e3e21e20ca3b0b488ec06dc25ffc3
 
   - name: fitness-tracker
     buildsystem: simple
@@ -87,5 +99,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/fitness-tracker.git
-        tag: v3.0.2
-        commit: 3e07c01cec6b6cf75fa2f7cad45faeac58e60d24
+        tag: v4.0.0
+        commit: 4a28f0ae17a58a0a1e7d18bac779ec53cd496039
