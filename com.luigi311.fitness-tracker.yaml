@@ -77,7 +77,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/workout_parser
-        commit: 417be9cdfe0e3e21e20ca3b0b488ec06dc25ffc3
+        commit: 0bb1d9c81af01cdbbfb0665367258f75d1f3fb00
 
   - name: fitness-tracker
     buildsystem: simple
@@ -99,5 +99,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/fitness-tracker.git
-        tag: v4.0.0
-        commit: 4a28f0ae17a58a0a1e7d18bac779ec53cd496039
+        tag: v4.0.1
+        commit: 79d204d0e166578ebc2a3c4b6e998bc7687f60d1
