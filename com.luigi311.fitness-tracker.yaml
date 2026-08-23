@@ -47,7 +47,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/bleaksport
-        commit: 4fb34ff69dbab6ec160a130a476fd95b2f682d1e
+        commit: b56861d2823c6e56bd4764fde52bde66d6b6e85c
 
   - name: python3-libpebble2
     buildsystem: simple
@@ -67,7 +67,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/cobble
-        commit: 182e1d09ac445a8d493faa32c51c7461e68aac4b
+        commit: 2993f645a3b532ac58a4f5f8ec0ac5a64a9d18f2
 
   - name: python3-workout-parser
     buildsystem: simple
@@ -99,5 +99,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/fitness-tracker.git
-        tag: v4.1.0
-        commit: 41e0ffaa980ecd568b9577df7f3875f3379c7968
+        tag: v5.0.0
+        commit: 2f86ef1d662e08c2f72c38c155d52af053704df4
