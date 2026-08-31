@@ -99,5 +99,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/fitness-tracker.git
-        tag: v5.1.0
-        commit: 8d6007cf7635208ee817fec84c135c60c0ab008c
+        tag: v5.1.1
+        commit: 334da300980f156bc00d4eb8d91226b095206325
