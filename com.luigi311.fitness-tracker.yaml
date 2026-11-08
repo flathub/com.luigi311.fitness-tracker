@@ -67,7 +67,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/cobble
-        commit: 2993f645a3b532ac58a4f5f8ec0ac5a64a9d18f2
+        commit: 0b595f408dc36712bc7dba46c1ff8c1cb81b4dde
 
   - name: python3-workout-parser
     buildsystem: simple
@@ -99,5 +99,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/luigi311/fitness-tracker.git
-        tag: v5.1.1
-        commit: 334da300980f156bc00d4eb8d91226b095206325
+        tag: v6.0.0
+        commit: 7a37d41b3353d2f6b4b949f2e2fe0b721f2c61c1
